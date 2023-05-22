@@ -15,6 +15,7 @@ class _SocketIOScreenState extends State<SocketIOScreen> {
   IO.Socket? socket;
 
   void _connectToServer() {
+    print("data");
     socket = IO.io('http://localhost:3000', <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': false,
